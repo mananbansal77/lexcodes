@@ -1,0 +1,14 @@
+%{
+    #include<stdio.h>
+    #include<stdlib.h>
+    #include<ctype.h>
+    FILE *outputFile;
+%}
+%%
+[ \t ]+   { fprintf(outputFile, " "); }
+[^ \t\r\n]+  { fprintf(outputFile, "%s", yytext); }
+%%
+int yywrap()
+{
+    return 1;
+}

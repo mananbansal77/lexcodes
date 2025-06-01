@@ -1,0 +1,1 @@
+Problem Statement-6- Design a LEX Code to replace all the white spaces of ‘Input.txt’ file by a single blank character and store the output in ‘Output.txt’ file.
